@@ -1,0 +1,6 @@
+[WARNING] 02/Apr/2026 01:15:55 - Not Found: /scan/list
+[WARNING] 02/Apr/2026 01:15:55 - Not Found: /favicon.ico
+[WARNING] 02/Apr/2026 01:17:56 - Not Found: /admin/
+[WARNING] 02/Apr/2026 01:28:36 - Bad Request: /api/v1/auth-token/
+[WARNING] 02/Apr/2026 01:35:27 - Not Found: /login/
+[WARNING] 02/Apr/2026 01:35:40 - Not Found: /scan/1/

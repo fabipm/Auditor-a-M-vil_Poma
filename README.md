@@ -31,11 +31,11 @@ El problema ocurrió porque el motor de Docker no estaba en ejecución en la má
 
 ### Captura: Panel principal (Dashboard)
 
-![Panel principal de Mobile Audit mostrando las aplicaciones creadas y los escaneos realizados](C:/Users/Usuario/.gemini/antigravity/brain/78b0ae34-ba1a-43e9-9511-cabbd94fb15a/home_dashboard_1775086537563.png)
+![Panel principal de Mobile Audit mostrando las aplicaciones creadas y los escaneos realizados](docs/images/home_dashboard_1775086537563.png)
 
 ### Captura: Patrones de seguridad configurados
 
-![Patrones de seguridad activos en la herramienta, con severidad, CWE y OWASP Mobile Top 10](C:/Users/Usuario/.gemini/antigravity/brain/78b0ae34-ba1a-43e9-9511-cabbd94fb15a/patterns_page_1775086594590.png)
+![Patrones de seguridad activos en la herramienta, con severidad, CWE y OWASP Mobile Top 10](docs/images/patterns_page_1775086594590.png)
 
 ---
 
@@ -52,11 +52,11 @@ Durante el desarrollo del laboratorio se subieron y procesaron 2 archivos APK en
 
 #### Captura: Resultado del escaneo (información de la app)
 
-![Resultado del escaneo de uptodown-social.onelife.apk mostrando información de la aplicación](C:/Users/Usuario/.gemini/antigravity/brain/78b0ae34-ba1a-43e9-9511-cabbd94fb15a/scan_1_results_upper_1775086550604.png)
+![Resultado del escaneo de uptodown-social.onelife.apk mostrando información de la aplicación](docs/images/scan_1_results_upper_1775086550604.png)
 
 #### Captura: Detalle del escaneo (hashes y seguridad)
 
-![Detalle del escaneo mostrando hashes MD5/SHA256, tamaño del archivo y sección de Security Info](C:/Users/Usuario/.gemini/antigravity/brain/78b0ae34-ba1a-43e9-9511-cabbd94fb15a/scan_1_results_lower_1775086558507.png)
+![Detalle del escaneo mostrando hashes MD5/SHA256, tamaño del archivo y sección de Security Info](docs/images/scan_1_results_lower_1775086558507.png)
 
 #### Hallazgos SAST Críticos:
 1. **Tráfico en texto plano (Cleartext Traffic Enabled):** La configuración en `AndroidManifest.xml` permite que la app se comunique a través de HTTP en lugar de HTTPS, exponiendo los datos de los usuarios a ataques de Man-In-The-Middle (MITM). (CWE-319)
@@ -74,11 +74,11 @@ Durante el desarrollo del laboratorio se subieron y procesaron 2 archivos APK en
 
 #### Captura: Resultado del escaneo (información de la app)
 
-![Resultado del escaneo de spotify mostrando package com.spotify.music](C:/Users/Usuario/.gemini/antigravity/brain/78b0ae34-ba1a-43e9-9511-cabbd94fb15a/scan_2_results_upper_1775086568494.png)
+![Resultado del escaneo de spotify mostrando package com.spotify.music](docs/images/scan_2_results_upper_1775086568494.png)
 
 #### Captura: Detalle del escaneo (hashes y seguridad)
 
-![Detalle del escaneo de Spotify mostrando hashes MD5/SHA256 y sección de Security Info](C:/Users/Usuario/.gemini/antigravity/brain/78b0ae34-ba1a-43e9-9511-cabbd94fb15a/scan_2_results_lower_1775086575330.png)
+![Detalle del escaneo de Spotify mostrando hashes MD5/SHA256 y sección de Security Info](docs/images/scan_2_results_lower_1775086575330.png)
 
 #### Hallazgos SAST Críticos:
 1. **Permisos Excesivos y Riesgosos:** La aplicación solicita permisos abusivos y potencialmente peligrosos (como lectura del estado del teléfono y ubicación precisa en segundo plano) que no parecen estrictamente necesarios para su funcionalidad básica. (CWE-250)
@@ -89,7 +89,7 @@ Durante el desarrollo del laboratorio se subieron y procesaron 2 archivos APK en
 
 ### Captura: Página de Findings
 
-![Página de hallazgos (Findings) de Mobile Audit mostrando la tabla de resultados](C:/Users/Usuario/.gemini/antigravity/brain/78b0ae34-ba1a-43e9-9511-cabbd94fb15a/findings_page_1775086584967.png)
+![Página de hallazgos (Findings) de Mobile Audit mostrando la tabla de resultados](docs/images/findings_page_1775086584967.png)
 
 ---
 
@@ -101,4 +101,4 @@ La herramienta utilizó `jadx` internamente para la decompilación de los archiv
 
 ### Video de navegación completa
 
-![Video de la navegación completa por la herramienta Mobile Audit](C:/Users/Usuario/.gemini/antigravity/brain/78b0ae34-ba1a-43e9-9511-cabbd94fb15a/capture_screenshots_1775086513443.webp)
+![Video de la navegación completa por la herramienta Mobile Audit](docs/images/capture_screenshots_1775086513443.webp)
